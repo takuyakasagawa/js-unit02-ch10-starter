@@ -7,16 +7,14 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended"
     ],
+    "root": true,
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
+        "jsx": true
+        }
     },
-    "plugins": [
-        "react"
-    ],
     "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"]
     }
 };
