@@ -6,13 +6,13 @@ export default class {
   }
   _cannotEmpty() {
     return new Promise((resolve, reject) => {
-      if (!!this.val) {
+      if (!this.val) {
         resolve(this);
       } else {
         reject({
           success: false,
           message: `${this.type}は必須です。`
-        })
+        });
       }
     });
   }

@@ -9,10 +9,10 @@ export default class extends BaseValidator {
     return super._cannotEmpty()
       .then(this._checkFormat)
       .then((res) => {
-        return { success: true }
+        return { success: true };
       })
       .catch(err => {
-        return err
+        return err;
       });
   }
   _checkFormat() {
@@ -24,7 +24,7 @@ export default class extends BaseValidator {
       return Promise.reject({
         success: false,
         message: `${this.type}のフォーマットが異なります。`
-      })
+      });
     }
   }
 }

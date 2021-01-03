@@ -8,7 +8,7 @@ describe('password validator', () => {
       .then((res) => {
         expect(res).toEqual({
           success: true
-        });
+      });
     });
   });
 
