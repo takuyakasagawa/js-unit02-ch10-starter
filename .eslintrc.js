@@ -1,7 +1,7 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es6": true 
     },
     "extends": [
         "eslint:recommended",
@@ -9,15 +9,15 @@ module.exports = {
     ],
     "root": true,
     "parserOptions": {
-			"ecmaVersion": 6,
+			"ecmaVersion": 7,
 			"sourceType": "module",
         "ecmaFeatures": {
-        "jsx": true
+            "impliedStrict": true
         }
     },
     "rules": {
         "semi": ["error", "always"],
         "quotes": ["error", "single"],
-        "no-unused-vars": "off"
+        "no-unused-vars": "off",
     }
 };
